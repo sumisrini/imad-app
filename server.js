@@ -9,7 +9,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
+app.get('/design-one', function (req, res) {
+    res.send("design - one requested and will be displayed here");
+    });
+        app.get('/design-two',function(req,res) {
+            res.send("design - two requested and will be displayed here");
+            });
+            app.get('/design-three',function(req,res) {
+                res.send("design-three requested and will be displayed here");
+            });
+            
+            app.get("/ui.style/css",function (req,res){
+        
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
