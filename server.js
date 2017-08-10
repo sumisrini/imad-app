@@ -14,11 +14,11 @@ app.get('/design-one', function (req, res) {
     });
     
         app.get('/design-two',function(req,res) {
-            res.send("design - two requested and will be displayed here");
+            res.sendFile("design - two requested and will be displayed here");
             });
             
             app.get('/design-three',function(req,res) {
-                res.send("design-three requested and will be displayed here");
+                res.sendFile("design-three requested and will be displayed here");
             });
             
             app.get("/ui.style/css",function (req,res){
